@@ -20,14 +20,24 @@ public class 주몽의명령 {
         //배열 정렬
         Arrays.sort(A);
 
+        //정답 수
         int count = 0;
-
         int i=0;
         int j=N-1;
 
         while(i<j){
-
+            if (A[i] + A[j] < M) {
+                i++;
+            } else if (A[i] + A[j] > M) {
+                j--;
+            } else{
+                count++;
+                i++;
+                j--;
+            }
         }
 
+        System.out.println(count);
+        bf.close();
     }
 }
