@@ -8,13 +8,13 @@ user = [1, 1]
 
 for i in range(length):
     if route[i] == 'R':
-        if user[1] < 5:
+        if user[1] < n:
             user[1] += 1
     if route[i] == 'U':
         if user[0] > 1:
             user[0] -= 1
     if route[i] == 'D':
-        if user[0] < 5:
+        if user[0] < n:
             user[0] += 1
     if route[i] == 'L':
         if user[1] > 1:
