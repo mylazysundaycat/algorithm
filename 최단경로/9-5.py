@@ -1,9 +1,7 @@
 import sys
 import heapq
-
 input = sys.stdin.readline
 INF = int(1e9)
-
 n, m, start = map(int, input().split())
 
 graph = [[] for i in range(n+1)]
