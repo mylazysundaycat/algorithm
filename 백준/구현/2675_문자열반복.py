@@ -9,3 +9,4 @@ def str_circle(input_str,num):
 for i in range(n):
     num, input_str = input().split()
     print(str_circle(input_str,int(num)))
+
